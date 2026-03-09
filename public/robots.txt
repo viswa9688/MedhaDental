@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://medhadentalcare.com/sitemap.xml
