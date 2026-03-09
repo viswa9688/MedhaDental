@@ -5,7 +5,7 @@ import Link from "next/link";
 import { CLINIC, NAV_LINKS } from "@/lib/constants";
 import { useState } from "react";
 
-const LOGO_PATH = "/images/medha-dental-care-logo.png";
+const LOGO_PATH = "/images/image_copy.svg";
 const LOGO_ALT = "Medha Dental Care – dental clinic logo, A.S. Rao Nagar Hyderabad";
 
 export function Header() {
@@ -29,6 +29,7 @@ export function Header() {
             className="h-12 w-auto object-contain"
             sizes="48px"
             priority
+            unoptimized
           />
           <div>
             <h1 className="text-2xl font-bold leading-none text-slate-900 font-display">
