@@ -1,8 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { CLINIC, NAV_LINKS } from "@/lib/constants";
 import { useState } from "react";
+
+const LOGO_PATH = "/images/medha-dental-care-logo.png";
+const LOGO_ALT = "Medha Dental Care – dental clinic logo, A.S. Rao Nagar Hyderabad";
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -14,14 +18,18 @@ export function Header() {
       <div className="container mx-auto flex items-center justify-between px-4 py-4 md:px-6">
         <Link
           href="/"
-          className="flex items-center gap-2 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-lg"
+          className="flex items-center gap-3 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-lg"
           aria-label="Medha Dental Care - Home"
         >
-          <div className="size-10 flex items-center justify-center rounded-lg bg-primary/10 text-primary">
-            <span className="material-symbols-outlined text-3xl" aria-hidden>
-              dentistry
-            </span>
-          </div>
+          <Image
+            src={LOGO_PATH}
+            alt={LOGO_ALT}
+            width={48}
+            height={48}
+            className="h-12 w-auto object-contain"
+            sizes="48px"
+            priority
+          />
           <div>
             <h1 className="text-2xl font-bold leading-none text-slate-900 font-display">
               Medha
