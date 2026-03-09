@@ -9,7 +9,7 @@ const POINTS = [
     icon: "stethoscope",
     title: "Experienced Doctors",
     description:
-      "Our team consists of internationally trained specialists with over 15 years of clinical excellence.",
+      "Our team consists of professionally trained specialists with over 15 years of clinical excellence.",
   },
   {
     icon: "biotech",

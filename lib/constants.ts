@@ -10,6 +10,12 @@ export const CLINIC = {
   hours: "Mon–Sat: 10:00 AM – 9:00 PM | Sunday: Emergencies only",
   whatsAppUrl: "https://wa.me/9182341721",
   instagramUrl: "https://www.instagram.com/medhadentalcare_hyd",
+  googleReviewsUrl: "https://share.google/u2kkvuTK0JqyJQTQv",
+} as const;
+
+export const AGGREGATE_RATING = {
+  value: "5.0",
+  count: "45",
 } as const;
 
 export const NAV_LINKS = [

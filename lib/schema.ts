@@ -1,4 +1,4 @@
-import { SITE_URL } from "./constants";
+import { AGGREGATE_RATING, SITE_URL } from "./constants";
 import { FAQ_ITEMS } from "./constants";
 
 export const dentistSchema = {
@@ -39,6 +39,11 @@ export const dentistSchema = {
     },
   ],
   sameAs: ["https://www.instagram.com/medhadentalcare_hyd"],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: AGGREGATE_RATING.value,
+    reviewCount: AGGREGATE_RATING.count,
+  },
 };
 
 export function getFAQPageSchema() {

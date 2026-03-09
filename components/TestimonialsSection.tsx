@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { AGGREGATE_RATING, CLINIC } from "@/lib/constants";
 
 const TESTIMONIALS = [
   {
@@ -49,10 +50,27 @@ export function TestimonialsSection() {
       <div className="container mx-auto px-4 md:px-6">
         <h2
           id="testimonials-heading"
-          className="mb-16 text-center text-4xl font-bold text-slate-900 md:text-5xl font-display"
+          className="mb-4 text-center text-4xl font-bold text-slate-900 md:text-5xl font-display"
         >
           What Our Patients Say
         </h2>
+        <p className="mb-12 flex flex-wrap items-center justify-center gap-2 text-center text-slate-600">
+          <span className="material-symbols-outlined text-gold text-xl" aria-hidden>
+            star
+          </span>
+          <span>
+            Join our {AGGREGATE_RATING.value}★ from {AGGREGATE_RATING.count}+ patients –{" "}
+            <a
+              href={CLINIC.googleReviewsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-primary underline transition-colors hover:text-primary/90 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-primary/5 rounded"
+              aria-label={`Check our Google reviews (${AGGREGATE_RATING.value} stars, ${AGGREGATE_RATING.count}+ patients)`}
+            >
+              Check latest Google reviews
+            </a>
+          </span>
+        </p>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {TESTIMONIALS.map((t) => (
             <blockquote

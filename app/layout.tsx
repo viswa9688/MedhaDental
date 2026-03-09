@@ -22,9 +22,10 @@ const montserrat = Montserrat({
   display: "swap",
 });
 
-const title = "Medha Dental Care | Best Dentist in AS Rao Nagar, Hyderabad";
+const title =
+  "Medha Dental Care | Best Dentist in AS Rao Nagar Hyderabad - Root Canal, Implants & More";
 const description =
-  "Best dentist AS Rao Nagar Hyderabad. Root canal treatment Hyderabad, dental implants AS Rao Nagar. Premium dental care at Medha Dental Care in A.S. Rao Nagar, Secunderabad.";
+  "Experience painless dental treatments at Medha Dental Care in A.S. Rao Nagar, Hyderabad. Expert root canal, dental implants, teeth whitening & more. Book now!";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

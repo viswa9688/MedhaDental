@@ -12,7 +12,7 @@ export function EmergencyBanner() {
           emergency
         </span>
         <span>
-          Dental Emergency:{" "}
+          Call Now to book your appointment:{" "}
           <a
             href={`tel:${CLINIC.phonePrimaryRaw}`}
             className="underline focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded"

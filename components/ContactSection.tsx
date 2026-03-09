@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { CLINIC } from "@/lib/constants";
+import { AGGREGATE_RATING, CLINIC } from "@/lib/constants";
 import { submitAppointment } from "@/app/actions/appointment";
 import { useActionState } from "react";
 
@@ -161,6 +161,18 @@ export function ContactSection() {
                 </p>
               </div>
             </div>
+            <a
+              href={CLINIC.googleReviewsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl border-2 border-primary bg-primary px-6 py-3 font-bold text-white shadow-soft-ui transition-transform hover:scale-[1.02] focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+              aria-label="View our reviews on Google (5.0 stars)"
+            >
+              <span className="material-symbols-outlined text-gold text-xl" aria-hidden>
+                star
+              </span>
+              <span>Reviews on Google ({AGGREGATE_RATING.value}★)</span>
+            </a>
           </div>
           <div className="rounded-2xl border border-white bg-slate-50 p-8 shadow-inner lg:w-1/2 lg:p-10">
             <h3 className="mb-8 text-3xl font-bold text-slate-900 font-display">

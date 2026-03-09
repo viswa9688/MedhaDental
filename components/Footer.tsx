@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CLINIC, NAV_LINKS, SERVICES } from "@/lib/constants";
+import { AGGREGATE_RATING, CLINIC, NAV_LINKS, SERVICES } from "@/lib/constants";
 
 const FOOTER_SERVICES = SERVICES.slice(0, 4);
 
@@ -27,7 +27,7 @@ export function Footer() {
               Leading the way in dental excellence in A.S. Rao Nagar, Hyderabad.
               Providing premium oral healthcare with state-of-the-art technology.
             </p>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap items-center gap-2 md:gap-4">
               <a
                 href={CLINIC.instagramUrl}
                 target="_blank"
@@ -36,6 +36,18 @@ export function Footer() {
                 aria-label="Instagram"
               >
                 <span className="material-symbols-outlined text-xl">share</span>
+              </a>
+              <a
+                href={CLINIC.googleReviewsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-slate-800 px-4 py-2.5 text-sm font-semibold text-slate-300 transition-colors hover:scale-105 hover:text-primary focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
+                aria-label="Read our reviews on Google (5.0 stars)"
+              >
+                <span className="material-symbols-outlined text-gold text-xl" aria-hidden>
+                  star
+                </span>
+                <span>Reviews on Google ({AGGREGATE_RATING.value}★)</span>
               </a>
             </div>
           </div>
