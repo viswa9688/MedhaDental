@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SERVICES } from "@/lib/constants";
 import type { ServiceAccent } from "@/lib/constants";
+import { ServiceIcon } from "@/components/ServiceIcons";
 
 const accentClasses: Record<ServiceAccent, string> = {
   primary: "bg-primary/10 text-primary",
@@ -41,15 +42,10 @@ export function ServicesSection() {
               className="soft-ui-card rounded-xl p-8 shadow-soft-ui"
             >
               <div
-                className={`mb-6 flex size-16 items-center justify-center rounded-2xl ${accentClasses[service.accent]}`}
+                className={`mb-6 flex size-16 items-center justify-center rounded-2xl ${accentClasses[service.accent]} ${service.id === "implants" ? "opacity-80" : ""} ${service.id === "preventive" ? "opacity-70" : ""}`}
                 aria-hidden
               >
-                <span
-                  className="material-symbols-outlined text-4xl"
-                  aria-hidden
-                >
-                  {service.icon}
-                </span>
+                <ServiceIcon serviceId={service.id} accent={service.accent} />
               </div>
               <h3 className="mb-3 text-2xl font-bold text-slate-900 font-display">
                 {service.title}
