@@ -76,7 +76,7 @@ export function WhyChooseSection() {
               className="absolute -bottom-6 -left-6 hidden rounded-xl bg-primary p-8 text-white shadow-xl md:block"
               aria-hidden
             >
-              <p className="text-3xl font-bold">10,000+</p>
+              <p className="text-3xl font-bold">6,000+</p>
               <p className="text-sm opacity-90">Happy Smiles Restored</p>
             </div>
           </div>

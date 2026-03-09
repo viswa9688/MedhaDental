@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { NAV_LINKS } from "@/lib/constants";
+import { CLINIC, NAV_LINKS } from "@/lib/constants";
 import { useState } from "react";
 
 export function Header() {
@@ -59,12 +59,13 @@ export function Header() {
               {mobileOpen ? "close" : "menu"}
             </span>
           </button>
-          <Link
-            href="#contact"
+          <a
+            href={`tel:${CLINIC.phonePrimaryRaw}`}
             className="hidden md:inline-flex bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-xl font-bold text-sm shadow-soft-ui transition-all focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+            aria-label="Call now"
           >
-            Book Appointment
-          </Link>
+            Call
+          </a>
         </div>
       </div>
 
@@ -85,13 +86,14 @@ export function Header() {
                 {label}
               </Link>
             ))}
-            <Link
-              href="#contact"
+            <a
+              href={`tel:${CLINIC.phonePrimaryRaw}`}
               onClick={() => setMobileOpen(false)}
               className="mt-2 inline-flex bg-primary text-white px-6 py-2.5 rounded-xl font-bold text-sm text-center"
+              aria-label="Call now"
             >
-              Book Appointment
-            </Link>
+              Call
+            </a>
           </nav>
         </div>
       )}

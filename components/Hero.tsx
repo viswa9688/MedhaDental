@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { CLINIC } from "@/lib/constants";
 
 const HERO_IMAGE =
   "https://lh3.googleusercontent.com/aida-public/AB6AXuCU6hDHG8RC-UsLXHhd4i3bGxVsaP6w5EQfYW2EuZSrcw21075Se5co3-ZHGNElbZlSsuNCDiZ6KWU0LACCFtFfTAUIrZ7ujZeXRoRXT1V0vDQ9zlPRYmWEGHwvloJXZ6BxIKEpLvJjRI1wGCVKfzCAXhwFTQ_iTE_EdkpP9pBMaCGnEpgd0EDrt6LvQbtX0r3DIUsqTT0V-pHEfpFXzjNgLlPysodrg7jmTQ22gjM-NMrQJuhBghLzEt9hf2eFPLy_LWCUIGXl0xcF";
@@ -47,12 +48,13 @@ export function Hero() {
             approach.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Link
-              href="#contact"
+            <a
+              href={`tel:${CLINIC.phonePrimaryRaw}`}
               className="inline-flex bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg shadow-soft-ui hover:scale-105 transition-transform focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+              aria-label="Call now"
             >
-              Schedule a Visit
-            </Link>
+              Call
+            </a>
             <Link
               href="#services"
               className="inline-flex border border-slate-200 bg-white px-8 py-4 rounded-xl font-bold text-lg text-slate-700 hover:bg-slate-50 transition-colors focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"

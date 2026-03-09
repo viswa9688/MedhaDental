@@ -25,7 +25,7 @@ const montserrat = Montserrat({
 const title =
   "Medha Dental Care | Best Dentist in AS Rao Nagar Hyderabad - Root Canal, Implants & More";
 const description =
-  "Experience painless dental treatments at Medha Dental Care in A.S. Rao Nagar, Hyderabad. Expert root canal, dental implants, teeth whitening & more. Book now!";
+  "Experience painless dental treatments at Medha Dental Care in A.S. Rao Nagar, Hyderabad. Expert root canal, dental implants, teeth whitening & more. Call now!";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

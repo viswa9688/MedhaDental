@@ -95,11 +95,18 @@ function AppointmentForm() {
           {state.message}
         </p>
       )}
+      <a
+        href={`tel:${CLINIC.phonePrimaryRaw}`}
+        className="flex min-h-[56px] w-full items-center justify-center rounded-xl bg-primary py-4 text-lg font-bold text-white shadow-soft-ui transition-transform hover:scale-[1.02] focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+        aria-label="Call now"
+      >
+        Call
+      </a>
       <button
         type="submit"
-        className="w-full rounded-xl bg-primary py-4 text-lg font-bold text-white shadow-soft-ui transition-transform hover:scale-[1.02] focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+        className="w-full rounded-xl border-2 border-slate-200 bg-white py-3 font-bold text-slate-700 transition-colors hover:bg-slate-50 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
       >
-        Book Appointment Now
+        Send message
       </button>
     </form>
   );

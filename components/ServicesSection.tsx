@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { SERVICES } from "@/lib/constants";
 import type { ServiceAccent } from "@/lib/constants";
 import { ServiceIcon } from "@/components/ServiceIcons";
@@ -7,12 +6,6 @@ const accentClasses: Record<ServiceAccent, string> = {
   primary: "bg-primary/10 text-primary",
   sage: "bg-sage/10 text-sage",
   gold: "bg-gold/10 text-gold",
-};
-
-const linkClasses: Record<ServiceAccent, string> = {
-  primary: "text-primary",
-  sage: "text-sage",
-  gold: "text-gold",
 };
 
 export function ServicesSection() {
@@ -50,21 +43,9 @@ export function ServicesSection() {
               <h3 className="mb-3 text-2xl font-bold text-slate-900 font-display">
                 {service.title}
               </h3>
-              <p className="mb-6 leading-relaxed text-slate-600">
+              <p className="leading-relaxed text-slate-600">
                 {service.description}
               </p>
-              <Link
-                href="#contact"
-                className={`inline-flex items-center gap-2 font-bold ${linkClasses[service.accent]} group focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded`}
-              >
-                Learn More
-                <span
-                  className="material-symbols-outlined transition-transform group-hover:translate-x-1"
-                  aria-hidden
-                >
-                  arrow_forward
-                </span>
-              </Link>
             </article>
           ))}
         </div>
