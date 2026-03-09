@@ -1,8 +1,7 @@
 import Image from "next/image";
 import { CLINIC } from "@/lib/constants";
 
-const WHY_IMAGE =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuCLLshKenPGH6Zh3iD1gb1pgv04MO1LMtzxlhlL5FFMx1al5hdqUdpM4J9VFjXUgF7VpwwFZD74VSUxw3DCusroYFcMkbLjQcExVRIeqyc9ksGyzMy5wM3lh8hkac-xBIleQeYK8i2lkRZHrTIKwiFKNI12lU3EHHvPMUKgQHbtT2qscSIFLPka_OxQzyoZG-9IoBfJnCRnIzjChAPBWWVBhbOwnm6htyC4cvXM_m_i1AC3LpFcNq1xVyLsj9A-uTUxvzL_fPDA3kAl";
+const WHY_IMAGE = "/images/procedure.webp";
 
 const POINTS = [
   {
@@ -65,7 +64,7 @@ export function WhyChooseSection() {
             <div className="aspect-square overflow-hidden rounded-2xl shadow-2xl">
               <Image
                 src={WHY_IMAGE}
-                alt="Doctor explaining a procedure to a patient at Medha Dental Care, AS Rao Nagar"
+                alt="Dentist and assistant providing care to a patient in our modern clinic"
                 width={600}
                 height={600}
                 className="h-full w-full object-cover"
