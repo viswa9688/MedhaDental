@@ -5,7 +5,7 @@ import Link from "next/link";
 import { CLINIC, NAV_LINKS } from "@/lib/constants";
 import { useState } from "react";
 
-const LOGO_PATH = "/images/image_copy.svg";
+const LOGO_PATH = "/images/logo.svg";
 const LOGO_ALT = "Medha Dental Care – dental clinic logo, A.S. Rao Nagar Hyderabad";
 
 export function Header() {
@@ -18,7 +18,7 @@ export function Header() {
       <div className="container mx-auto flex items-center justify-between px-4 py-4 md:px-6">
         <Link
           href="/"
-          className="flex items-center gap-3 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-lg"
+          className="focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-lg"
           aria-label="Medha Dental Care - Home"
         >
           <Image
@@ -31,14 +31,6 @@ export function Header() {
             priority
             unoptimized
           />
-          <div>
-            <h1 className="text-2xl font-bold leading-none text-slate-900 font-display">
-              Medha
-            </h1>
-            <p className="text-[10px] tracking-[0.2em] uppercase text-sage font-bold">
-              Dental Care
-            </p>
-          </div>
         </Link>
 
         <nav

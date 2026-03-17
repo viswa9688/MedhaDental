@@ -6,7 +6,7 @@ export const dentistSchema = {
   "@type": "Dentist",
   name: "Medha Dental Care",
   image: `${SITE_URL}/images/og-image.jpg`,
-  logo: `${SITE_URL}/images/image_copy.svg`,
+  logo: `${SITE_URL}/images/logo.svg`,
   "@id": SITE_URL,
   url: SITE_URL,
   telephone: "+919491944467",

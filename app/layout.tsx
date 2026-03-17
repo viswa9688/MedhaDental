@@ -27,7 +27,7 @@ const title =
 const description =
   "Experience painless dental treatments at Medha Dental Care in A.S. Rao Nagar, Hyderabad. Expert root canal, dental implants, teeth whitening & more. Call now!";
 
-const LOGO_PATH = "/images/image_copy.svg";
+const LOGO_PATH = "/images/logo.svg";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
