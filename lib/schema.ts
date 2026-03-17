@@ -9,7 +9,7 @@ export const dentistSchema = {
   logo: `${SITE_URL}/images/image_copy.svg`,
   "@id": SITE_URL,
   url: SITE_URL,
-  telephone: "+9182341721",
+  telephone: "+919491944467",
   priceRange: "$$",
   address: {
     "@type": "PostalAddress",

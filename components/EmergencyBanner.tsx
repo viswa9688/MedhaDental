@@ -21,7 +21,7 @@ export function EmergencyBanner() {
           </a>
           {" · "}
           <a
-            href={`tel:+918301079384`}
+            href={`tel:${CLINIC.phonePrimaryRaw}`}
             className="underline focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded"
           >
             {CLINIC.phoneSecondary}

@@ -37,7 +37,7 @@ export async function submitAppointment(
   } catch {
     return {
       success: false,
-      message: "Something went wrong. Please call us at +91 82341 721 to book.",
+      message: "Something went wrong. Please call us at +91 94919 44467 to book.",
     };
   }
 }

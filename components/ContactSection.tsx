@@ -160,7 +160,7 @@ export function ContactSection() {
                   </a>
                   {" / "}
                   <a
-                    href="tel:+918301079384"
+                    href={`tel:${CLINIC.phonePrimaryRaw}`}
                     className="text-primary hover:underline focus-visible:ring-2 focus-visible:ring-primary rounded"
                   >
                     {CLINIC.phoneSecondary}
