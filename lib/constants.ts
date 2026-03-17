@@ -3,11 +3,11 @@ export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://medhadental
 export const CLINIC = {
   name: "Medha Dental Care",
   tagline: "A.S. Rao Nagar, Hyderabad",
-  address: "LIG-B-283, Anupuram Colony, A.S. Rao Nagar, Secunderabad, Hyderabad, Telangana 500062",
+  address: "LIG-B-283, Anupuram Colony, Post Office Road, A.S. Rao Nagar, Secunderabad, Hyderabad, Telangana 500062",
   phonePrimary: "+91 9491944467",
   phoneSecondary: "+91 9491944467",
   phonePrimaryRaw: "+919491944467",
-  hours: "Mon–Sat: 10:00 AM – 9:00 PM | Sunday: Emergencies only",
+  hours: "Mon–Sat: 10:00 AM – 2:00 PM and 5:00 PM - 9:00 PM | Sunday: 10:00 AM - 1:00 PM",
   whatsAppUrl: "https://wa.me/919491944467",
   instagramUrl: "https://www.instagram.com/medhadentalcare_hyd",
   googleReviewsUrl: "https://share.google/u2kkvuTK0JqyJQTQv",
@@ -103,12 +103,12 @@ export const FAQ_ITEMS = [
   {
     question: "Where is Medha Dental Care located?",
     answer:
-      "We are located at LIG-B-283, Anupuram Colony, A.S. Rao Nagar, Secunderabad, Hyderabad, Telangana 500062. We are easily accessible from Secunderabad and surrounding areas.",
+      "We are located at LIG-B-283, Anupuram Colony, Post Office Road, A.S. Rao Nagar, Secunderabad, Hyderabad, Telangana 500062. We are easily accessible from Secunderabad and surrounding areas.",
   },
   {
     question: "What are the clinic hours?",
     answer:
-      "Medha Dental Care is open Monday to Saturday from 10:00 AM to 9:00 PM. On Sundays we are available for dental emergencies only. You can call +91 94919 44467 for appointments or emergencies.",
+      "Medha Dental Care is open Monday to Saturday from 10:00 AM to 2:00 PM and 5:00 PM to 9:00 PM. On Sundays we are open from 10:00 AM to 1:00 PM. You can call +91 94919 44467 for enquiries or emergencies.",
   },
   {
     question: "Do you offer dental implants in Hyderabad?",
@@ -118,6 +118,6 @@ export const FAQ_ITEMS = [
   {
     question: "Is there parking available?",
     answer:
-      "Yes. Ample parking is available near our clinic in Anupuram Colony, A.S. Rao Nagar. We recommend arriving a few minutes early during peak hours.",
+      "Yes. Ample parking is available near our clinic in Anupuram Colony, Post Office Road, A.S. Rao Nagar. We recommend arriving a few minutes early during peak hours.",
   },
 ] as const;
