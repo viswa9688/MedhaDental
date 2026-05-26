@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { AGGREGATE_RATING, CLINIC, NAV_LINKS, SERVICES } from "@/lib/constants";
 
@@ -88,7 +90,7 @@ export function Footer() {
               <a
                 href={`tel:${CLINIC.phonePrimaryRaw}`}
                 className="text-primary hover:underline focus-visible:ring-2 focus-visible:ring-primary rounded"
-                onClick={() => { if(typeof gtag_report_conversion === 'function') gtag_report_conversion(`tel:${CLINIC.phonePrimaryRaw}`); }}
+                onClick={() => { if(typeof (window as any).gtag_report_conversion === 'function') (window as any).gtag_report_conversion(`tel:${CLINIC.phonePrimaryRaw}`); }}
               >
                 {CLINIC.phonePrimary}
               </a>
