@@ -74,6 +74,13 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <Script
+          id="google-ads-click-to-call"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `function gtag_report_conversion(url){var callback=function(){if(typeof(url)!='undefined'){window.location=url;}};gtag('event','conversion',{'send_to':'AW-17325693756/8acOCPW107McELy2xMVA','event_callback':callback});return false;}`,
+          }}
+        />
+        <Script
           id="google-ads-tag"
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=AW-17325693756"
